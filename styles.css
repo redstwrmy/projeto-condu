@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: black;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        ". main ."
+        "footer footer footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 50px 1fr 50px;
+    height: 100vh;
+    gap: 5px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background-color: rgb(169, 97, 179);
+    padding: 10px;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    background-color:rgb(122, 59, 134); 
+    color: whitesmoke;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul.menu li, a {
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    font-family: Poppins, sans-serif;
+}
+
+
+a:hover {
+    color: rgb(44, 17, 66);
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: rgb(169, 97, 179);
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+div.fundo {
+    margin: 0;
+    background-image: url(welcome.png);
+    background-size: cover;
+    width: 1020px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+p.fundo {
+    font-family: Poppins, sans-serif;
+    font-size: 90px;
+    text-indent: 25px;
+    text-align: center;
+    margin: 0 20px 0;
+    color:rgb(255, 255, 255);
+    display: inline;
+}
+
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    text-align: right;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+}
+
+
+h2, h3, h4, h6 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    text-indent: 25px;
+    text-align: justify;
+    margin: 0 20px 0;
+    
+}
+
+.headings {
+    top: 0;
+    position: sticky;
+    background-color: rgb(0, 0, 0);
+    height:35px;
+    z-index: 2;
+}
+
+.headings:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+div.header {
+    display:inline-block;
+    position: relative;
+    width: 100%;
+    width: 100vh;
+    right: 375px;
+}
+
+img.logoc {
+    display: inline;
+    position: relative;
+    width: 100px;
+    float:left;
+}
+
+
+img.rodape {
+    display: inline;
+    position: relative;
+    margin-top: 45px;
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+
+p.rodape {
+    display: inline;
+    position: relative;
+    text-align: right;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+}
+
+.botao {
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color:  #6d1883;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    text-decoration-line: none;
+    font: 16px, Poppins, sans-serif;
+    width: 35%;
+    padding: 15px;
+    border:none;
+    
+}
+
+.botao:hover {
+    background-color:  rgb(51, 7, 59);
+    color: white;
+    transform: scale(1.2)
+}
+
+.botao a:hover {
+    color: white;
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    
+}
+
+div.justify {
+    justify-content: center;
+}
+
+figcaption.left {
+    margin-left: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+}
+
+figcaption.right {
+    margin-right: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+}
+
+figcaption.center {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+}
+
+details {
+    margin: 90px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+ summary:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.list {
+    margin: 0 50px 0;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    list-style-type: disc;
+}
+
+div.flag {
+    background-image: url(trans-flag.png);
+    background-size: cover;
+    width: 900px;
+    height: 450px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+}
+
+p.flag {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    text-indent: 25px;
+    text-align: center;
+    margin: 0 20px 0;
+    color:black;
+}
+
+div.bg-condu {
+    /* background-image: */
+    background-size: contain;
+    width: 1098px;
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+}
+
+p.bg-condu {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 65px;
+    text-indent: 25px;
+    text-align: center;
+    margin: 0 20px 0;
+    color:rgb(255, 255, 255);
+}
+
+h3 span {
+    color:#000000;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+
+}
+
+
+.container-forms {
+    display: flex;
+}
+
+
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+     
+.titulo, .paragrafo, .iframe {
+    flex: 1; /* Distribui o espaço disponível igualmente entre os elementos */
+}
+
+a.link {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin-top: 20px;
+}
+
+form {
+    font-family: helvetica, arial, sans-serif;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input, form textarea, form select {
+    padding: 20px;
+    min-width: 300px;
+    border: 2px solid rgb(65, 12, 114);
+    border-radius: 40px;
+}
+
+form input[type=submit] {
+    background-color: rgb(65, 12, 114);
+    color: white;
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+p.center {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+div.center {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.icones {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 40px;
+    z-index: 1;
+    
+}
+
+.icones .icon {
+    position: relative;
+    list-style: none;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 15px rgba(0,0, 0, .1);
+    cursor: pointer;
+}
+
+.icones .icon a {
+    list-style: none;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.icones .icon::before {
+    /* content: '\f16d'; */
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 4px solid var(--color);
+    text-align: center;
+    line-height: 120px;
+    font-size: 6em;
+    color: var(--color);
+    transition: .5s all;
+}
+
+
+div.icones div.icon:hover::before {
+    height: 100%;
+}
+
+
+div.icones div.icon .fa-brands, .icones .icon .fa-solid  {
+    font-size: 6em;
+    -webkit-text-stroke: 2px var(--color);
+    color: transparent;
+}
+
+
+
+/* .icones .icon:nth-of-type(1)::before {
+    content: '\f16d';
+    font-family: fontAwesome;
+} */
+
+
+.icones .icon:nth-of-type(2)::before {
+    content: '\f08c';
+    font-family: fontAwesome;
+}
+
+
+.icones .icon:nth-of-type(3)::before {
+    content: '\f092';
+    font-family: fontAwesome;
+}
+
+.icones .icon:nth-of-type(4)::before {
+    content: '\f15c';
+    font-family: fontAwesome;
+}
+
+img.redes {
+    width: 110px;
+    height: 97px;
+}
